@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.97f12f90.css",
+    "main.js": "/static/js/main.226ed6d2.js",
+    "static/media/RoobertPRO-Bold.ttf": "/static/media/RoobertPRO-Bold.57820505f8cea981cb54.ttf",
+    "static/media/RoobertPRO-Regular.ttf": "/static/media/RoobertPRO-Regular.d533abd829162d15a36d.ttf",
+    "static/media/RoobertPRO-Medium.ttf": "/static/media/RoobertPRO-Medium.dfb10097ced271cea499.ttf",
+    "static/media/RoobertPRO-Light.ttf": "/static/media/RoobertPRO-Light.03dfb6a903a28fb65fc6.ttf",
+    "static/media/GeistMono-UltraBlack-BWnP17ho.ttf": "/static/media/GeistMono-UltraBlack-BWnP17ho.5690a0da95af7a7ac7b5.ttf",
+    "static/media/GeistMono-Black-BtWomzC7.ttf": "/static/media/GeistMono-Black-BtWomzC7.a39bce73f5e8154acbb5.ttf",
+    "static/media/GeistMono-Bold-DXEkrzIZ.ttf": "/static/media/GeistMono-Bold-DXEkrzIZ.63f33424ce9bb25be1ee.ttf",
+    "static/media/GeistMono-SemiBold-BNCbingT.ttf": "/static/media/GeistMono-SemiBold-BNCbingT.2bbbd4639c18abce7ee7.ttf",
+    "static/media/GeistMono-Medium-BymlQu0_.ttf": "/static/media/GeistMono-Medium-BymlQu0_.dd1f5c6de9f4e04169ac.ttf",
+    "static/media/GeistMono-Regular-CTG7h7Im.ttf": "/static/media/GeistMono-Regular-CTG7h7Im.836c967f4fe81ef99044.ttf",
+    "static/media/GeistMono-UltraLight-CqP-BYQJ.ttf": "/static/media/GeistMono-UltraLight-CqP-BYQJ.038a7dc4f7c94d2efb3b.ttf",
+    "static/media/GeistMono-Light-Bj-KiDIi.ttf": "/static/media/GeistMono-Light-Bj-KiDIi.52ad8c1e0bf68e369f62.ttf",
+    "static/media/GeistMono-Thin-C5Obc9Or.ttf": "/static/media/GeistMono-Thin-C5Obc9Or.a5286bcf21c4ae1b351d.ttf",
+    "static/media/trustnetlogo-white.png": "/static/media/trustnetlogo-white.d1754ffc8749277eea27.png",
+    "static/media/Dr. Satyabrata Roy.jpeg": "/static/media/Dr. Satyabrata Roy.280f435581f0ecb9daf6.jpeg",
+    "static/media/Dr Neha Chaudhary.jpeg": "/static/media/Dr Neha Chaudhary.cace639397d22dc900cd.jpeg",
+    "static/media/Dr. Amit Garg.jpeg": "/static/media/Dr. Amit Garg.81ea6e67a7f9f67ff3f7.jpeg",
+    "static/media/Dr Chhattar Singh Lamba.jpeg": "/static/media/Dr Chhattar Singh Lamba.381a32138b589b4eb87b.jpeg",
+    "static/media/Dr Kuldip Singh Sangwan.jpeg": "/static/media/Dr Kuldip Singh Sangwan.ca01c7931bfad54d4ebf.jpeg",
+    "static/media/Dr Amit Soni.jpeg": "/static/media/Dr Amit Soni.4fa536b485b3aafd858c.jpeg",
+    "static/media/Dr. Jay Prakash Singh.jpeg": "/static/media/Dr. Jay Prakash Singh.27e8e2a11726dcd48f17.jpeg",
+    "static/media/Dr. Umashankar Rawat.jpeg": "/static/media/Dr. Umashankar Rawat.81bc86f0b765d2a83a8a.jpeg",
+    "index.html": "/index.html",
+    "main.97f12f90.css.map": "/static/css/main.97f12f90.css.map",
+    "main.226ed6d2.js.map": "/static/js/main.226ed6d2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.97f12f90.css",
+    "static/js/main.226ed6d2.js"
+  ]
+}

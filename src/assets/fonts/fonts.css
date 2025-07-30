@@ -1,0 +1,90 @@
+@font-face {
+  font-family: 'RoobertPRO';
+  src: url('./RoobertPRO-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RoobertPRO';
+  src: url('./RoobertPRO-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RoobertPRO';
+  src: url('./RoobertPRO-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RoobertPRO';
+  src: url('./RoobertPRO-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GeistMono';
+  src: url('./GeistMono-Thin-C5Obc9Or.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GeistMono';
+  src: url('./GeistMono-UltraLight-CqP-BYQJ.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GeistMono';
+  src: url('./GeistMono-Light-Bj-KiDIi.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GeistMono';
+  src: url('./GeistMono-Regular-CTG7h7Im.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GeistMono';
+  src: url('./GeistMono-Medium-BymlQu0_.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GeistMono';
+  src: url('./GeistMono-SemiBold-BNCbingT.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GeistMono';
+  src: url('./GeistMono-Bold-DXEkrzIZ.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GeistMono';
+  src: url('./GeistMono-Black-BtWomzC7.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GeistMono';
+  src: url('./GeistMono-UltraBlack-BWnP17ho.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
