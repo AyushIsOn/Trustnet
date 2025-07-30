@@ -844,6 +844,31 @@ function App() {
                 </a>
               </div>
             </div>
+            
+            {/* Credits Section */}
+            <div className="footer-credits-container">
+              <div className="footer-credits-section">
+                <p className="credits-label">Built by SDC</p>
+                <div className="credits-names">
+                  <a 
+                    href="https://www.linkedin.com/in/ayush2406/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="credits-name"
+                  >
+                    Ayush Gupta
+                  </a>
+                  <a 
+                    href="https://www.linkedin.com/in/amrishasrivastava/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="credits-name"
+                  >
+                    Amrisha Shrivastava
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Bottom Bar */}
