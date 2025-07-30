@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.93e7019e.css",
+    "main.css": "/static/css/main.6c403beb.css",
     "main.js": "/static/js/main.2e3a7a76.js",
     "static/media/RoobertPRO-Bold.ttf": "/static/media/RoobertPRO-Bold.57820505f8cea981cb54.ttf",
     "static/media/RoobertPRO-Regular.ttf": "/static/media/RoobertPRO-Regular.d533abd829162d15a36d.ttf",
@@ -26,11 +26,11 @@
     "static/media/Dr. Jay Prakash Singh.jpeg": "/static/media/Dr. Jay Prakash Singh.27e8e2a11726dcd48f17.jpeg",
     "static/media/Dr. Umashankar Rawat.jpeg": "/static/media/Dr. Umashankar Rawat.81bc86f0b765d2a83a8a.jpeg",
     "index.html": "/index.html",
-    "main.93e7019e.css.map": "/static/css/main.93e7019e.css.map",
+    "main.6c403beb.css.map": "/static/css/main.6c403beb.css.map",
     "main.2e3a7a76.js.map": "/static/js/main.2e3a7a76.js.map"
   },
   "entrypoints": [
-    "static/css/main.93e7019e.css",
+    "static/css/main.6c403beb.css",
     "static/js/main.2e3a7a76.js"
   ]
 }
