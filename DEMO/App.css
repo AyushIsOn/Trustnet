@@ -63,7 +63,6 @@ body {
   backdrop-filter: blur(10px);
   border-bottom: 1px solid #333;
   transition: transform 0.3s ease;
-  height: 80px;
 }
 
 .nav-container {
@@ -79,11 +78,11 @@ body {
 .logo {
   display: flex;
   align-items: center;
-  padding: 8px;
+  padding: 4px;
 }
 
 .logo-image {
-  height: 50px;
+  height: 60px;
   width: auto;
   object-fit: contain;
   padding: 3px;
@@ -191,7 +190,7 @@ body {
 /* Sub Navigation Header */
 .sub-nav {
   position: sticky;
-  top: 80px;
+  top: 70px;
   background: #222;
   border-top: 1px solid #444;
   border-bottom: 1px solid #444;
@@ -830,7 +829,7 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  margin: -3rem -2rem 0 -5.5rem;
+  margin: -5rem -2rem 0 -7.5rem;
   padding: 0;
   line-height: 0;
 }
@@ -971,21 +970,18 @@ body {
 /* Interactive Section */
 .footer-interactive-section {
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 1fr;
   gap: 3rem;
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 2rem 3rem 2rem;
   border-top: 1px solid rgba(248, 221, 147, 0.1);
   padding-top: 3rem;
-  align-items: flex-start;
-  justify-content: space-between;
 }
 
 @media (min-width: 1024px) {
   .footer-interactive-section {
-    grid-template-columns: 1fr auto;
-    gap: 4rem;
+    grid-template-columns: 1fr;
     padding: 0 3rem 4rem 3rem;
     padding-top: 3rem;
   }
@@ -1163,77 +1159,180 @@ body {
   gap: 0.75rem;
 }
 
-.footer-credits-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-end;
-  text-align: right;
-  margin-top: auto;
-  padding-top: 1rem;
-}
-
-.footer-credits-section {
+.footer-tech-info {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  align-items: flex-end;
+  align-items: flex-start;
 }
 
-.credits-label {
+@media (min-width: 1024px) {
+  .footer-tech-info {
+    align-items: flex-end;
+  }
+}
+
+.tech-label {
   font-family: 'GeistMono', monospace;
   font-size: 0.75rem;
-  font-weight: 700;
-  color: #bebebe;
-  margin: 0;
+  color: #666;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.05em;
 }
 
-.credits-names {
+.tech-stack {
   display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-  align-items: flex-end;
-}
-
-.credits-name {
+  align-items: center;
+  gap: 0.5rem;
   font-family: 'GeistMono', monospace;
-  font-size: 0.7rem;
-  font-weight: 700;
+  font-size: 0.75rem;
+}
+
+.tech-item {
   color: #f8dd93;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  text-transform: uppercase;
-  letter-spacing: 0.3px;
+  font-weight: 500;
 }
 
-.credits-name:hover {
-  color: #fdf5dd;
-  text-decoration: underline;
+.tech-divider {
+  color: #666;
 }
 
-/* Responsive adjustments for credits */
+/* Responsive adjustments */
 @media (max-width: 768px) {
+  .footer-conference-title {
+    font-size: 2rem;
+  }
+  
+  .footer-main-content {
+    padding: 1.5rem 0.5rem;
+  }
+  
   .footer-interactive-section {
-    grid-template-columns: 1fr;
-    gap: 2rem;
+    padding: 0 1rem 2rem 1rem;
+    padding-top: 2rem;
   }
   
-  .footer-credits-container {
-    align-items: center;
-    text-align: center;
+  .footer-bottom-content {
+    padding: 1.5rem 1rem;
+  }
+}
+
+/* Animation keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(248, 221, 147, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(248, 221, 147, 0.4);
+  }
+}
+
+/* Enhanced footer interactions with scroll optimization */
+.footer-brand-section,
+.footer-nav-column,
+.footer-social-container {
+  animation: fadeInUp 0.6s ease forwards;
+  transform: translateZ(0); /* Prevent layout thrashing */
+}
+
+.footer-nav-column:nth-child(2) {
+  animation-delay: 0.05s; /* Reduced delay for smoother appearance */
+}
+
+.footer-nav-column:nth-child(3) {
+  animation-delay: 0.1s;
+}
+
+.footer-nav-link {
+  animation: slideInFromLeft 0.5s ease forwards;
+}
+
+.footer-nav-link:nth-child(1) { animation-delay: 0.1s; }
+.footer-nav-link:nth-child(2) { animation-delay: 0.2s; }
+.footer-nav-link:nth-child(3) { animation-delay: 0.3s; }
+.footer-nav-link:nth-child(4) { animation-delay: 0.4s; }
+
+/* Advanced hover effects */
+.footer-social-item::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #f8dd93, transparent);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.footer-social-item:hover::after {
+  transform: scaleX(1);
+}
+
+/* Improved responsive design */
+@media (max-width: 480px) {
+  .footer-conference-title {
+    font-size: 1.75rem;
   }
   
-  .footer-credits-section {
-    align-items: center;
+  .footer-social-links {
+    grid-template-columns: repeat(2, 1fr);
   }
   
-  .credits-names {
-    align-items: center;
-    flex-direction: row;
-    gap: 1rem;
+  .footer-main-content {
+    padding: 1rem 0.5rem;
+    gap: 1.5rem;
   }
+}
+
+/* Dark mode enhancements */
+.advanced-footer {
+  background-attachment: fixed;
+  background-image: 
+    radial-gradient(circle at 20% 80%, rgba(248, 221, 147, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(248, 221, 147, 0.03) 0%, transparent 50%);
+}
+
+/* Subtle text selection styling */
+.advanced-footer ::selection {
+  background: rgba(248, 221, 147, 0.2);
+  color: #f8dd93;
+}
+
+.advanced-footer ::-moz-selection {
+  background: rgba(248, 221, 147, 0.2);
+  color: #f8dd93;
 }
 
 /* Registration Section Styles */
@@ -1855,5 +1954,259 @@ body {
   .submit-work-btn {
     padding: 0.8rem 1.5rem;
     font-size: 0.9rem;
+  }
+}
+
+/* MetallicPaint Section Styles */
+.metallic-paint-section {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background: #000;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  margin: 4rem 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.metallic-paint-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.metallic-paint-wrapper {
+  width: 100%;
+  height: 100%;
+  max-width: 600px;
+  max-height: 600px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 
+    0 0 30px rgba(248, 221, 147, 0.3),
+    0 0 60px rgba(248, 221, 147, 0.1);
+  background: #000;
+  position: relative;
+}
+
+.metallic-paint-wrapper::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, #f8dd93, transparent, #f8dd93, transparent, #f8dd93);
+  border-radius: 14px;
+  z-index: -1;
+  animation: borderGlow 3s ease-in-out infinite;
+}
+
+@keyframes borderGlow {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.02);
+  }
+}
+
+.metallic-paint-loading,
+.metallic-paint-error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 12px;
+  border: 1px solid #333;
+}
+
+.loading-text,
+.error-text {
+  font-family: 'GeistMono', monospace;
+  font-size: 1.2rem;
+  color: #f8dd93;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.loading-text::after {
+  content: '';
+  animation: loadingDots 1.5s infinite;
+}
+
+@keyframes loadingDots {
+  0%, 20% {
+    content: '';
+  }
+  40% {
+    content: '.';
+  }
+  60% {
+    content: '..';
+  }
+  80%, 100% {
+    content: '...';
+  }
+}
+
+/* Responsive design for MetallicPaint */
+@media (max-width: 768px) {
+  .metallic-paint-section {
+    height: 400px;
+    margin: 3rem 0;
+  }
+  
+  .metallic-paint-container {
+    padding: 1rem;
+  }
+  
+  .metallic-paint-wrapper {
+    max-width: 400px;
+    max-height: 400px;
+    border-radius: 8px;
+  }
+  
+  .metallic-paint-wrapper::before {
+    border-radius: 10px;
+  }
+  
+  .loading-text,
+  .error-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .metallic-paint-section {
+    height: 300px;
+    margin: 2rem 0;
+  }
+  
+  .metallic-paint-wrapper {
+    max-width: 280px;
+    max-height: 280px;
+  }
+  
+  .loading-text,
+  .error-text {
+    font-size: 0.9rem;
+  }
+}
+
+/* MetallicPaint Logo Styles */
+.metallic-paint-logo {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  background: transparent;
+  display: block;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+.metallic-paint-logo canvas {
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 8px;
+}
+
+.metallic-paint-logo-loading {
+  position: relative;
+  background: transparent;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-spinner {
+  width: 24px;
+  height: 24px;
+  border: 2px solid rgba(248, 221, 147, 0.3);
+  border-top: 2px solid #f8dd93;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Footer specific styling */
+.footer-brand-logo.metallic-paint-logo {
+  filter: drop-shadow(0 0 15px rgba(248, 221, 147, 0.4));
+  transition: filter 0.3s ease;
+  width: 600px !important;
+  height: 360px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.footer-brand-logo.metallic-paint-logo:hover {
+  filter: drop-shadow(0 0 25px rgba(248, 221, 147, 0.6));
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .metallic-paint-logo {
+    border-radius: 6px;
+  }
+  
+  .metallic-paint-logo canvas {
+    border-radius: 6px;
+  }
+  
+  .loading-spinner {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .footer-brand-logo.metallic-paint-logo {
+    width: 450px !important;
+    height: 270px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-brand-logo.metallic-paint-logo {
+    width: 350px !important;
+    height: 210px !important;
+  }
+}
+
+/* Responsive footer logo container adjustments */
+@media (max-width: 768px) {
+  .footer-logo-container {
+    margin: -2.5rem -1.5rem 0 -1.5rem;
+  }
+  
+  .footer-brand-section {
+    gap: 0.125rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-logo-container {
+    margin: -2rem -1rem 0 -1rem;
+  }
+  
+  .footer-brand-section {
+    gap: 0;
   }
 }

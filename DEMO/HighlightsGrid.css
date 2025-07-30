@@ -1,0 +1,122 @@
+@import '../assets/fonts/fonts.css';
+
+.highlights-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  margin: 2rem 0;
+  max-width: 1200px;
+  font-family: 'RoobertPRO', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* When items are passed (Publications section), use full width single column */
+.highlights-grid.full-width {
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.highlights-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+/* Custom grid for Publications section with 5 items */
+.highlights-section.publications-layout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.highlights-section.publications-layout .highlight-card:nth-child(4) {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.highlights-section.publications-layout .highlight-card:nth-child(5) {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.highlight-card {
+  text-align: left;
+  transition: box-shadow 0.3s ease;
+}
+
+.highlight-title {
+  font-family: 'RoobertPRO', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin: 0 0 0.5rem 0;
+  color: #fff;
+}
+
+.highlight-description {
+  font-family: 'RoobertPRO', sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: #ccc;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.publication-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.publication-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+}
+
+.springer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.springer-logo img {
+  max-width: 120px;
+  height: auto;
+  opacity: 0.8;
+}
+
+.publication-content h3 {
+  font-family: 'RoobertPRO', sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin: 0 0 1rem 0;
+  color: #fff;
+}
+
+.publication-content p {
+  font-family: 'RoobertPRO', sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: #ccc;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .highlights-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .highlights-section {
+    grid-template-columns: 1fr;
+  }
+  
+  .springer-logo img {
+    max-width: 100px;
+  }
+}
