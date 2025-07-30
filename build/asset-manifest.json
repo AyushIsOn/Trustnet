@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.97f12f90.css",
-    "main.js": "/static/js/main.226ed6d2.js",
+    "main.css": "/static/css/main.6c403beb.css",
+    "main.js": "/static/js/main.2e3a7a76.js",
     "static/media/RoobertPRO-Bold.ttf": "/static/media/RoobertPRO-Bold.57820505f8cea981cb54.ttf",
     "static/media/RoobertPRO-Regular.ttf": "/static/media/RoobertPRO-Regular.d533abd829162d15a36d.ttf",
     "static/media/RoobertPRO-Medium.ttf": "/static/media/RoobertPRO-Medium.dfb10097ced271cea499.ttf",
     "static/media/RoobertPRO-Light.ttf": "/static/media/RoobertPRO-Light.03dfb6a903a28fb65fc6.ttf",
+    "static/media/MUJ-Logo.svg": "/static/media/MUJ-Logo.0651f88288c89fa5f038eae7d6bad444.svg",
     "static/media/GeistMono-UltraBlack-BWnP17ho.ttf": "/static/media/GeistMono-UltraBlack-BWnP17ho.5690a0da95af7a7ac7b5.ttf",
     "static/media/GeistMono-Black-BtWomzC7.ttf": "/static/media/GeistMono-Black-BtWomzC7.a39bce73f5e8154acbb5.ttf",
     "static/media/GeistMono-Bold-DXEkrzIZ.ttf": "/static/media/GeistMono-Bold-DXEkrzIZ.63f33424ce9bb25be1ee.ttf",
@@ -25,11 +26,11 @@
     "static/media/Dr. Jay Prakash Singh.jpeg": "/static/media/Dr. Jay Prakash Singh.27e8e2a11726dcd48f17.jpeg",
     "static/media/Dr. Umashankar Rawat.jpeg": "/static/media/Dr. Umashankar Rawat.81bc86f0b765d2a83a8a.jpeg",
     "index.html": "/index.html",
-    "main.97f12f90.css.map": "/static/css/main.97f12f90.css.map",
-    "main.226ed6d2.js.map": "/static/js/main.226ed6d2.js.map"
+    "main.6c403beb.css.map": "/static/css/main.6c403beb.css.map",
+    "main.2e3a7a76.js.map": "/static/js/main.2e3a7a76.js.map"
   },
   "entrypoints": [
-    "static/css/main.97f12f90.css",
-    "static/js/main.226ed6d2.js"
+    "static/css/main.6c403beb.css",
+    "static/js/main.2e3a7a76.js"
   ]
 }

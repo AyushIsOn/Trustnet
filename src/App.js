@@ -5,7 +5,6 @@ import SpotlightCard from './components/SpotlightCard';
 import ChromaGrid from './components/ChromaGrid';
 import ScrambleText from './components/ScrambleText';
 import AnimatedCanvas from './components/AnimatedCanvas';
-import Organisers from './components/Organisers';
 import MetallicPaintLogo from './components/MetallicPaintLogo';
 import logoHeader from './assets/trustnetlogo-white.png';
 import mujLogo from './assets/MUJ-Logo.svg';
@@ -13,6 +12,7 @@ import dotsPattern from './assets/dots-use-cases.png';
 import './App.css';
 
 function App() {
+  // eslint-disable-next-line no-unused-vars
   const [currentPage, setCurrentPage] = useState('home');
 
   useEffect(() => {
